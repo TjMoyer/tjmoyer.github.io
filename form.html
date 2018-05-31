@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="./normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <header>Hybrid Creations Jewelry Co.</header>
+      <nav>
+        <!--fixed main nav on top -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Creations</a></li>
+          <li><a href="./form.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+
+      <form action="index.html" method="post">
+
+        <h2>Sign Up</h2>
+
+        <fieldset>  <!-- used for making groups of info you can number with a span -->
+
+          <legend><span class="number">1</span>Join Our Mailing List</legend>
+
+          <lable for="name"></lable>
+          <input type="text" id="name" name="user_name" placeholder="Name:">
+
+          <lable for="email"></lable>
+          <input type="email" id="mail" name="user_email" placeholder="Email:"> <!-- no closing needed -->
+
+          </fieldset>
+
+        <fieldset>
+
+          <legend><span class="number">2</span>Comments</legend>
+
+        <label for="comments"></label>
+        <textarea id="comments" name="user_comments" placeholder="Comments:"></textarea><br> <!-- adds a comment box -->
+
+          <!-- checkbox -->
+          <label>Intrests:</label><br>
+            <input type="checkbox" id="Jewelry" value="Intrest_jewelry"name="user_intrest"><label class="light" for="jewelry">Jewlery</label><br>
+            <input type="checkbox" id="Fluid Art" value="Intrest_fluid_art"name="user_intrest"><label class="light" for="fluid art">Fluid Art</label>
+          </fieldset>
+        <button type="submit">Sign Up</button>
+
+      </form>
+      </div>
+      <footer class="main-footer">
+        <span>&copy;2017 Hybrid Creations Jewelry Co.</span>
+      </footer>
+
+    </body>
+</html>

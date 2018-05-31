@@ -1,4 +1,5 @@
-* {
+*, *:before, *:after {
+  
   box-sizing: border-box;
 }
 
@@ -19,7 +20,7 @@ header {
   color: #fff;
 }
 
-header {
+header { /* 3d txt */
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -36,6 +37,7 @@ header {
 
 h2 {
   text-align: center;
+  color: #fff;
 }
 
 section {
@@ -122,7 +124,7 @@ nav ul li a {
 
 .main-footer {
   margin-top: 30px;
-  background-color: #1A2727;
+  background-color: #627373;
 }
 
 
@@ -152,6 +154,69 @@ nav ul li a {
 .wrapper {
   max-width: 100%;
 
+}
+
+/* form style */
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin: 4px 4px;
+  color: #fff;
+}
+
+input {
+  padding: 4px 0;
+  margin: 2px 0;
+  border-radius: 5px;
+}
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #627373;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 60%;
+  border: 1px solid #000;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+legend {
+  color: #fff;
+}
+
+
+.number {
+  background-color: #627373;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 1.4em;
+  margin-right: 6px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 50%;
 }
 
 /* @media query  */
