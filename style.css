@@ -1,5 +1,5 @@
 *, *:before, *:after {
-  
+
   box-sizing: border-box;
 }
 
@@ -66,7 +66,6 @@ section.sec1 p {
   color: #fff;
   font-weight: bold;
   text-align: center;
-
 }
 
 section.sec2 {
@@ -101,6 +100,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 999;
+
 }
 nav ul {
   display: flex;
@@ -125,10 +125,18 @@ nav ul li a {
 .main-footer {
   margin-top: 30px;
   background-color: #627373;
+  color: #fff;
 }
 
 
 /* === Container Styles === */
+
+.image1 {
+  max-width: 80%;
+  padding-left: 24%;
+  margin-top: 2em;
+  filter: grayscale(75%);
+}
 
 
 .gallery {
@@ -156,9 +164,12 @@ nav ul li a {
 
 }
 
+.private {
+  color: #fff;
+}
 /* form style */
 form {
-  max-width: 300px;
+  max-width: 500px;
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 8px;
@@ -182,7 +193,9 @@ input {
   border-radius: 5px;
 }
 input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+  display:inline;
+  margin: 10px 4px 8px 0;
+  cursor: pointer;
 }
 
 button {
@@ -198,6 +211,7 @@ button {
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 legend {
@@ -225,6 +239,6 @@ legend {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 0px) {
 
 }
