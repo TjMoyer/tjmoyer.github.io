@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" href="./normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-      <header>Hybrid Creations Jewelry Co.</header>
-      <nav>
-        <!--fixed main nav on top -->
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Creations</a></li>
-          <li><a href="./form.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="wrapper">
 
-      <form action="index.html" method="post">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
 
-        <h2>Sign Up</h2>
+<body>
+  <header>Hybrid Creations Jewelry Co.</header>
+  <nav>
+    <!--fixed main nav on top -->
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html">About</a></li>
+      <li><a href="./index.html">Creations</a></li>
+      <li><a href="./form.html">Contact</a></li>
+    </ul>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="./index.html">Home</a>
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#creations">Creations</a>
+        <a href="./form.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper">
 
-        <fieldset>  <!-- used for making groups of info you can number with a span -->
+    <form action="index.html" method="post">
 
-          <legend><span class="number">1</span>Join Our Mailing List</legend>
+      <h2>Sign Up</h2>
 
-          <lable for="name"></lable>
-          <input type="text" id="name" name="user_name" placeholder="Name:">
+      <fieldset>
+        <!-- used for making groups of info you can number with a span -->
 
-          <lable for="email"></lable>
-          <input type="email" id="mail" name="user_email" placeholder="Email:"> <!-- no closing needed -->
+        <legend><span class="number">1</span>Join Our Mailing List</legend>
 
-          </fieldset>
+        <lable for="name"></lable>
+        <input type="text" id="name" name="user_name" placeholder="Name:">
 
-        <fieldset>
+        <lable for="email"></lable>
+        <input type="email" id="mail" name="user_email" placeholder="Email:">
+        <!-- no closing needed -->
 
-          <legend><span class="number">2</span>Comments</legend>
+      </fieldset>
+
+      <fieldset>
+
+        <legend><span class="number">2</span>Comments</legend>
 
         <label for="comments"></label>
-        <textarea id="comments" name="user_comments" placeholder="Comments:"></textarea> <!-- adds a comment box -->
+        <textarea id="comments" name="user_comments" placeholder="Comments:"></textarea>
+        <!-- adds a comment box -->
 
-          <!-- checkbox -->
-            <legend><span class="number">3</span>Intrests:</legend>
-            <input type="checkbox" id="jewelry" value="Intrest_jewelry"name="user_intrest"><label class="light" for="jewelry">Jewlery</label>
-            <input type="checkbox" id="fluid-Art" value="Intrest_fluid_art"name="user_intrest"><label class="light" for="fluid-art">Fluid Art</label>
-          </fieldset>
-        <button type="submit">Sign Up</button><br>
-        <span class="private">Hybrid Creations will never sell or share your email or other personal info.</span>
+        <!-- checkbox -->
+        <legend><span class="number">3</span>Intrests:</legend>
+        <input type="checkbox" id="jewelry" value="Intrest_jewelry" name="user_intrest"><label class="light" for="jewelry">Jewlery</label>
+        <input type="checkbox" id="fluid-Art" value="Intrest_fluid_art" name="user_intrest"><label class="light" for="fluid-art">Fluid Art</label>
+      </fieldset>
+      <button type="submit">Sign Up</button><br>
+      <span class="private">Hybrid Creations will never sell or share your email or other personal info.</span>
 
-      </form>
-      </div>
-      <footer class="main-footer">
-        <span>&copy;2017 Hybrid Creations Jewelry Co.</span>
-      </footer>
+    </form>
+  </div>
+  <footer class="main-footer">
+    <span>&copy;2017 Hybrid Creations Jewelry Co.</span>
+  </footer>
 
-    </body>
+</body>
+
 </html>
