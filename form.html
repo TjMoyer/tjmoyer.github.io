@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="./normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./style.css">
+  <script>// form submiting script
+    $(document).ready(function() {
+
+      $('form').submit(function(evt) {
+        evt.preventDefault();
+        var url = $(this).attr("action");
+        var formData = $(this).serialize();
+        $.post(url, formData, function(response) {
+            $('#contact').html("<p>Thanks for signing up!</p>");
+        }).fail(function(jqXHR) {
+            alert(jqXHR.statustext); // end post
+        });
+      }); // end submit
+    }); // end ready
+    </script>
 </head>
 
 <body>
@@ -31,8 +46,8 @@
     </div>
   </nav>
   <div class="wrapper">
-
-    <form action="index.html" method="post">
+    <div id="#contact">
+    <form action="/signup" method="post">
 
       <h2>Sign Up</h2>
 
@@ -65,9 +80,9 @@
       </fieldset>
       <button type="submit">Sign Up</button><br>
       <span class="private">Hybrid Creations will never sell or share your email or other personal info.</span>
-
+    </div>
     </form>
-  </div>
+  </div> <!--/wrapper -->
   <footer class="main-footer">
     <span>&copy;2017 Hybrid Creations Jewelry Co.</span>
   </footer>
