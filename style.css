@@ -1,6 +1,4 @@
-/* *, *:before, *:after {
-  box-sizing: border-box;
-} */
+/* ---- base page styles ---- */
 
 body {
   display: flex;
@@ -25,58 +23,6 @@ header {
 header {
   /* 3d txt */
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
-}
-
-h2 {
-  text-align: center;
-  color: #fff;
-}
-
-section {
-  width: 100%;
-  height: a;
-}
-
-section.sec1 {
-  box-sizing: border-box;
-  height: auto;
-}
-
-section.sec1 h2 {
-  font-size: 3em margin:0;
-  padding: 0 0 20px;
-  color: #fff;
-  text-align: center;
-}
-
-section.sec1 p {
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
-
-section.sec2 {
-  /* padding: 100px; */
-  box-sizing: border-box;
-  height: auto;
-}
-
-section.sec2 h2 {
-  font-size: 3em margin:0;
-  padding: 0 0 20px;
-  color: #fff;
-  text-align: center;
-}
-
-section.sec2 p {
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
 }
 
 nav {
@@ -115,7 +61,68 @@ nav ul li a {
   color: #fff;
 }
 
-/* === Container Styles === */
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  justify-content: center;
+}
+
+/* ---- main page styles ---- */
+
+section {
+  width: 100%;
+  height: a;
+}
+
+section.sec1 {
+  box-sizing: border-box;
+  height: auto;
+}
+
+section.sec1 h2 {
+  font-size: 3em margin:0;
+  padding: 0 0 20px;
+  color: #fff;
+  text-align: center;
+}
+
+section.sec1 p {
+  font-size: 1.2em;
+  margin: 1rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.sec2 {
+  box-sizing: border-box;
+  height: auto;
+}
+
+section.sec2 h2 {
+  font-size: 3em margin:0;
+  padding: 0 0 20px;
+  color: #fff;
+  text-align: center;
+}
+
+section.sec2 p {
+  font-size: 1.2em;
+  margin: 1rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+}
+
+/* ---- Gallery Styles ---- */
 
 .image1 {
   display: flex;
@@ -146,20 +153,11 @@ nav ul li a {
   text-align: center;
 }
 
-.wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 100%;
-  justify-content: center;
-}
-
 .private {
   color: #fff;
 }
 
-/* form style */
+/* ---- form style ---- */
 
 form {
   max-width: 500px;
@@ -225,24 +223,28 @@ legend {
   border-radius: 50%;
 }
 
-/* for @media query hides second list when above media query size */
+.email {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+/* ---- for @media query hides second list when above media query size ---- */
 
 .dropbtn, .dropdown-content {
   display: none;
 }
 
-/* Smartphones (portrait) ----------- */
+/* ---- Smartphones (portrait) ---- */
 
 @media(max-width: 500px) {
-/* .image1 {
+  /* .image1 {
   display: flex;
   justify-content: center;
 } */
-
   nav ul {
     display: none;
   }
-  /* Dropdown Button */
+  /* ---- Dropdown Button ----*/
   .dropbtn {
     display: inline-block;
     width: 100%;
@@ -252,12 +254,12 @@ legend {
     font-size: 16px;
     border: none;
   }
-  /* The container <div> - needed to position the dropdown content */
+  /* ----The container <div> - needed to position the dropdown content ---- */
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  /* Dropdown Content (Hidden by Default) */
+  /* ---- Dropdown Content (Hidden by Default) ---- */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -267,24 +269,22 @@ legend {
     z-index: 1;
     align-items: center;
   }
-  /* Links inside the dropdown */
+  /* ---- Links inside the dropdown ----*/
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  /* Change color of dropdown links on hover */
+  /* ---- Change color of dropdown links on hover ---- */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-  /* Show the dropdown menu on hover */
+  /* ---- Show the dropdown menu on hover ---- */
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* ---- Change the background color of the dropdown button when the dropdown content is shown ----*/
   .dropdown:hover .dropbtn {
     background-color: #627373;
   }
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width: 321px) {}

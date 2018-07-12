@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./style.css">
-  <script>// form submiting script
+  <script>
+    // form submiting script
     $(document).ready(function() {
 
       $('form').submit(function(evt) {
@@ -16,13 +17,13 @@
         var url = $(this).attr("action");
         var formData = $(this).serialize();
         $.post(url, formData, function(response) {
-            $('#contact').html("<p>Thanks for signing up!</p>");
+          $('#contact').html("<p>Thanks for signing up!</p>");
         }).fail(function(jqXHR) {
-            alert(jqXHR.statustext); // end post
+          alert(jqXHR.statustext); // end post
         });
       }); // end submit
     }); // end ready
-    </script>
+  </script>
 </head>
 
 <body>
@@ -47,42 +48,44 @@
   </nav>
   <div class="wrapper">
     <div id="#contact">
-    <form action="/signup" method="post">
+      <form action="/signup" method="post">
+        <a class='email' href="mailto:hybridcreationsjc@example.com?subject=Mail from Our Site">Email Us</a>
+        <h2>Or</h2>
+        <h2>Sign Up</h2>
 
-      <h2>Sign Up</h2>
+        <fieldset>
+          <!-- used for making groups of info you can number with a span -->
 
-      <fieldset>
-        <!-- used for making groups of info you can number with a span -->
+          <legend><span class="number">1</span>Join Our Mailing List</legend>
 
-        <legend><span class="number">1</span>Join Our Mailing List</legend>
+          <lable for="name"></lable>
+          <input type="text" id="name" name="user_name" placeholder="Name:">
 
-        <lable for="name"></lable>
-        <input type="text" id="name" name="user_name" placeholder="Name:">
+          <lable for="email"></lable>
+          <input type="email" id="mail" name="user_email" placeholder="Email:">
+          <!-- no closing needed -->
 
-        <lable for="email"></lable>
-        <input type="email" id="mail" name="user_email" placeholder="Email:">
-        <!-- no closing needed -->
+        </fieldset>
 
-      </fieldset>
+        <fieldset>
 
-      <fieldset>
+          <legend><span class="number">2</span>Comments</legend>
 
-        <legend><span class="number">2</span>Comments</legend>
+          <label for="comments"></label>
+          <textarea id="comments" name="user_comments" placeholder="Comments:"></textarea>
+          <!-- adds a comment box -->
 
-        <label for="comments"></label>
-        <textarea id="comments" name="user_comments" placeholder="Comments:"></textarea>
-        <!-- adds a comment box -->
-
-        <!-- checkbox -->
-        <legend><span class="number">3</span>Intrests:</legend>
-        <input type="checkbox" id="jewelry" value="Intrest_jewelry" name="user_intrest"><label class="light" for="jewelry">Jewlery</label>
-        <input type="checkbox" id="fluid-Art" value="Intrest_fluid_art" name="user_intrest"><label class="light" for="fluid-art">Fluid Art</label>
-      </fieldset>
-      <button type="submit">Sign Up</button><br>
-      <span class="private">Hybrid Creations will never sell or share your email or other personal info.</span>
+          <!-- checkbox -->
+          <legend><span class="number">3</span>Intrests:</legend>
+          <input type="checkbox" id="jewelry" value="Intrest_jewelry" name="user_intrest"><label class="light" for="jewelry">Jewlery</label>
+          <input type="checkbox" id="fluid-Art" value="Intrest_fluid_art" name="user_intrest"><label class="light" for="fluid-art">Fluid Art</label>
+        </fieldset>
+        <button type="submit">Sign Up</button><br>
+        <span class="private">Hybrid Creations will never sell or share your email or other personal info.</span>
     </div>
     </form>
-  </div> <!--/wrapper -->
+  </div>
+  <!--/wrapper -->
   <footer class="main-footer">
     <span>&copy;2017 Hybrid Creations Jewelry Co.</span>
   </footer>
