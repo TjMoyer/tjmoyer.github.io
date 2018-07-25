@@ -47,6 +47,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
+<<<<<<< HEAD
   color: #fff;
   padding: 0 20px;
   text-decoration: none;
@@ -58,9 +59,25 @@ nav ul li a {
 .main-footer {
   margin-top: 30px;
   background-color: #627373;
+=======
+>>>>>>> 8b0edc828e4ebe64daa26b144937174c0c3bacc9
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+<<<<<<< HEAD
+=======
+.main-footer {
+  margin-top: 30px;
+  background-color: #627373;
   color: #fff;
 }
 
+>>>>>>> 8b0edc828e4ebe64daa26b144937174c0c3bacc9
 .wrapper {
   display: flex;
   flex: 1;
@@ -203,6 +220,7 @@ button {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 #myBtn { /* back to top btn*/
@@ -220,6 +238,8 @@ button {
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+=======
+>>>>>>> 8b0edc828e4ebe64daa26b144937174c0c3bacc9
 }
 
 #myBtn:hover { /*hover back to top*/
